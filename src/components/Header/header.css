@@ -1,0 +1,12 @@
+.header__title {
+  font-family: "Elms Sans";
+  text-align: center;
+}
+
+h1.header__title {
+  font-size: 2.5em;
+}
+
+.header__subtitle {
+  text-align: center;
+}
