@@ -1,6 +1,7 @@
 .header__title {
-  font-family: "Elms Sans";
+  font-family: "Quicksand";
   text-align: center;
+  padding: 15px;
 }
 
 h1.header__title {
@@ -9,4 +10,7 @@ h1.header__title {
 
 .header__subtitle {
   text-align: center;
+  font-size: 1.1em;
+  font-family: "Quicksand";
+  font-weight: 500;
 }

@@ -3,6 +3,7 @@ import TextField from "@mui/material/TextField";
 import { useState, useContext } from "react";
 import { getIngredientsByName, getRecipesByName } from "../../services/Api";
 import { RecipesContext } from "../../context/RecipesContext";
+import "./searchBar.css";
 
 export default function SearchBar() {
   const [typedRecipeName, setTypedRecipeName] = useState("");
@@ -49,6 +50,30 @@ export default function SearchBar() {
           className="search-input"
           aria-label="Campo de busca de receitas"
           onChange={(evt) => setTypedRecipeName(evt.target.value)}
+          sx={{
+            backgroundColor: "#FFF8E8",
+
+            "& .MuiOutlinedInput-root.Mui-focused fieldset": {
+              borderColor: "#3C8845",
+            },
+
+            "& .MuiInputLabel-root.Mui-focused": {
+              color: "#3C8845",
+            },
+            "& .MuiOutlinedInput-root": {
+              borderRadius: "20px",
+            },
+            "& .MuiInputBase-input": {
+              fontFamily: "Quicksand",
+              fontSize: "1rem",
+              fontWeight: 500,
+            },
+            "& .MuiInputLabel-root": {
+              fontFamily: "Quicksand",
+              fontSize: "1rem",
+              fontWeight: 500,
+            },
+          }}
         />
         <Button
           variant="contained"
@@ -56,6 +81,12 @@ export default function SearchBar() {
           className="search-btn"
           aria-label="Buscar"
           onClick={() => search()}
+          sx={{
+            bgcolor: "#3C8845",
+            "&:hover": { bgcolor: "#2F6D38" },
+            fontFamily: "Quicksand",
+            fontSize: "1em",
+          }}
         >
           Buscar
         </Button>

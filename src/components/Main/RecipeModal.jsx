@@ -1,4 +1,4 @@
-import * as React from "react";
+import { React, useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -24,8 +24,23 @@ export default function RecipeModal({
   open,
   title,
   image,
-  instructions,
+  details,
 }) {
+  const [measuredIngredient, setMeasuredIngredient] = useState([]);
+
+  useEffect(() => {
+    let measuredIngredient = [];
+    for (let i = 1; i <= 20; i++) {
+      const measure = details[`strMeasure${i}`];
+      const ingredient = details[`strIngredient${i}`];
+      if (ingredient) {
+        measuredIngredient.push(`${measure} ${ingredient}`);
+      }
+    }
+    setMeasuredIngredient(measuredIngredient);
+    console.log(measuredIngredient);
+  }, []);
+
   return (
     <Modal
       open={open}
@@ -70,11 +85,24 @@ export default function RecipeModal({
             {title}
           </Typography>
           <Typography
+            id="modal-modal-ingredients"
+            color="text.secondary"
+            sx={{ lineHeight: 1.7, fontFamily: "Ubuntu", textAlign: "justify" }}
+          >
+            <ul>
+              {measuredIngredient &&
+                measuredIngredient.map((ingredient) => {
+                  return <li>{ingredient}</li>;
+                })}
+            </ul>
+            {details.strIngredient}
+          </Typography>
+          <Typography
             id="modal-modal-description"
             color="text.secondary"
             sx={{ lineHeight: 1.7, fontFamily: "Ubuntu", textAlign: "justify" }}
           >
-            {instructions}
+            {details.strInstructions}
           </Typography>
         </Box>
       </Box>

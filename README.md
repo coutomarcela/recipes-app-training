@@ -1,3 +1,16 @@
+cores:
+| Uso | Cor | Hex |
+|---------------------|--------------------|-----------|
+| 🤍 Fundo da página | Creme quase branco | `#FFF9ED` |
+| 🤍 Cards | Creme claro | `#FFF8E8` |
+| 🌿 Verde principal | Verde folha | `#3C8845` |
+| 🌲 Hover | Verde escuro | `#2F6D38` |
+| 🍅 Destaque | Vermelho tomate | `#D9432F` |
+| 🍊 Acento | Laranja | `#F59A32` |
+| 🍫 Títulos/texto | Marrom escuro | `#3A2923` |
+| 🪵 Texto secundário | Marrom suave | `#857161` |
+| 🥛 Categorias inativas | Bege acinzentado | `#EEEAE0` |
+
 # 🍽️ App de Receitas — React + Vite + MUI
 
 ## Visão Geral

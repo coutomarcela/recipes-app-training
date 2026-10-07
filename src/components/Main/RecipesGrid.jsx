@@ -9,7 +9,7 @@ export default function RecipesGrid() {
   return (
     <section className="recipes-section">
       <h2 id="recipes-title" className="section-title">
-        Receitas
+        RECEITAS
       </h2>
       <div
         id="recipes-grid"
@@ -17,13 +17,16 @@ export default function RecipesGrid() {
         role="list"
         aria-label="Lista de receitas"
       >
+        {/* só renderiza o card se recipes for verdadeiro, senão o map não acontece */}
+
         {recipes &&
           recipes.map((recipe) => {
             return (
               <Card
                 title={recipe.strMeal}
                 image={recipe.strMealThumb}
-                instructions={recipe.strInstructions}
+                id={recipe.idMeal}
+                key={recipe.idMeal}
               />
             );
           })}

@@ -1,0 +1,9 @@
+.categories-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  margin-bottom: 15px;
+}

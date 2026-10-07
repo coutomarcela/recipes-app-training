@@ -6,7 +6,7 @@ export default function Header() {
       <div className="header__inner">
         <h1 className="header__title">
           <span className="header__icon">🍽️</span>
-          Receitas do Mundo
+          RECEITAS DO MUNDO
         </h1>
         <p className="header__subtitle">
           Explore receitas de qualquer lugar do planeta
