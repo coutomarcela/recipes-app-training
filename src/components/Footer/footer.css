@@ -1,7 +1,21 @@
 .footer {
-  text-align: center;
   font-size: 1.1em;
   font-family: "Quicksand";
   font-weight: 500;
+  margin-top: auto;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #3c8845;
+}
+
+.footer-link:hover {
+  color: #2f6d38;
 }

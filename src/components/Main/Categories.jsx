@@ -49,6 +49,7 @@ export default function Categories() {
         <ButtonGroup
           variant="text"
           aria-label="Categorias de receitas"
+          className="categories-buttons"
           sx={{
             display: "flex",
             flexWrap: "wrap",
@@ -65,6 +66,7 @@ export default function Categories() {
                 backgroundColor: "#3C8845",
                 color: "#FFF9ED",
               },
+              fontFamily: "Ubuntu",
             },
           }}
         >

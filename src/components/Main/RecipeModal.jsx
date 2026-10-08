@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import CloseIcon from "@mui/icons-material/Close";
 import "./card.css";
+import "./recipeModal.css";
 
 const style = {
   position: "absolute",

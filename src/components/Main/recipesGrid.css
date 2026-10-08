@@ -4,4 +4,10 @@
   justify-content: center; /* Alinha os cards ao centro se sobrarem */
   gap: 50px;
   margin-bottom: 30px;
+  font-family: "Quicksand";
+}
+
+#recipes-title {
+  text-align: center;
+  margin-top: 50px;
 }

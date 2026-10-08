@@ -33,3 +33,9 @@ export async function getIngredientsByName() {
   const resposta = await apiClient.get("list.php?i=list");
   return resposta.data;
 }
+
+//função que pega uma receita aleatória
+export async function getRandomRecipe() {
+  const resposta = await apiClient.get("random.php");
+  return resposta.data.meals;
+}

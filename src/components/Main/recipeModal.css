@@ -1,0 +1,15 @@
+#modal-modal-title {
+  margin: 0;
+  font-family: "Quicksand";
+}
+
+#modal-modal-ingredients {
+  padding: 20px;
+  font-family: "Quicksand";
+  font-weight: 600;
+}
+
+#modal-modal-description {
+  font-family: "Quicksand";
+  font-weight: 600;
+}

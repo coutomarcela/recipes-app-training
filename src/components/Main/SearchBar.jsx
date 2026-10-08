@@ -50,6 +50,9 @@ export default function SearchBar() {
           className="search-input"
           aria-label="Campo de busca de receitas"
           onChange={(evt) => setTypedRecipeName(evt.target.value)}
+          onKeyDown={(evt) => {
+            evt.key === "Enter" ? search() : null;
+          }}
           sx={{
             backgroundColor: "#FFF8E8",
 
